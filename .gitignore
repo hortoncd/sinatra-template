@@ -1,0 +1,7 @@
+.rvmrc
+.rspec
+.ruby-gemset
+.ruby-version
+.bundle/
+vendor/
+coverage/
