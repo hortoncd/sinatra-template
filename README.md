@@ -5,6 +5,16 @@ Description
 
 Simple sinatra application template with rspec, capybara and simplecov.
 
+Running
+=======
+
+If you don't want to be limited to the versions in the Gemfile.lock, remove it before `bundle install`
+
+```
+bundle install --path ./vendor
+bundle exec foreman start
+```
+
 Testing
 =======
 
