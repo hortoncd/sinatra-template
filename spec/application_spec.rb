@@ -10,13 +10,19 @@ describe 'Helpers' do
 end
 
 describe 'Web Service' do
-  it "should load the home page" do
+  it 'should load the home page' do
     visit '/'
     expect(page.status_code).to be(200)
     expect(page).to have_title app.settings.title
   end
 
-  it "should show error page for an undefined page" do
+  it "should have the correct navbar-brand for '/'" do
+    visit '/'
+    expect(page.status_code).to be(200)
+    expect(page).to have_content "#{app.settings.title} : "
+  end
+
+  it 'should show error page for an undefined page' do
     visit '/test'
     expect(page.status_code).to be(404)
     expect(page).to have_title "Error: 404"
@@ -33,6 +39,12 @@ describe 'Web Service' do
       visit p['name']
       expect(page.status_code).to be(200)
       expect(page).to have_title p['title']
+    end
+
+    it "should have the correct navbar-brand on a GET of the '#{p['name']}' page" do
+      visit '/'
+      expect(page.status_code).to be(200)
+      expect(page).to have_content "#{app.settings.title} : "
     end
 
     it "should have the correct page content on a GET of the '#{p['name']}' page" do
