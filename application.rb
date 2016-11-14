@@ -33,6 +33,7 @@ end
 
 get '/' do
   @title = settings.title
+  @navbar_brand = settings.title
   erb :main
 end
 
@@ -40,6 +41,7 @@ end
 settings.pages.each do |p|
   get p['link'] do
     @title = p['title']
+    @navbar_brand = settings.title
     @action = p['name']
     @content = p['content']
     erb p['erb'].to_sym
@@ -47,6 +49,7 @@ settings.pages.each do |p|
 
   post p['link'] do
     @title = p['title']
+    @navbar_brand = settings.title
     @action = p['name']
     @content = p['content']
     erb p['erb'].to_sym
@@ -55,6 +58,7 @@ end
 
 not_found do
   @title = "Error: 404"
+  @navbar_brand = settings.title
   @content= "This is not the page you're looking for (hand-waviness here)"
   erb :error
 end
