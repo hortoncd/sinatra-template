@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+require "irb"
+require "irb/completion"
+
+require_relative "../application.rb"
+
+# Sinatra actually has a hook on `at_exit` that activates whenever it's
+# included. This setting will supress it.
+set :run, false
+
+IRB.start
