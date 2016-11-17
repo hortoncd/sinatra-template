@@ -5,6 +5,9 @@ ruby '2.1.8'
 gem 'rake', '~> 10.1.0'
 gem 'sinatra', '~> 1.4.0'
 
+# for IRB 'console'
+gem 'rb-readline'
+
 group :test, :develop do
   gem 'foreman', '~> 0.78.0'
   gem 'rspec', '~> 3.5.0'

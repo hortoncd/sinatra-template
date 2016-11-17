@@ -28,6 +28,7 @@ GEM
     rack-test (0.6.3)
       rack (>= 1.0)
     rake (10.1.1)
+    rb-readline (0.5.3)
     rspec (3.5.0)
       rspec-core (~> 3.5.0)
       rspec-expectations (~> 3.5.0)
@@ -63,6 +64,7 @@ DEPENDENCIES
   foreman (~> 0.78.0)
   rack-test (~> 0.6.0)
   rake (~> 10.1.0)
+  rb-readline
   rspec (~> 3.5.0)
   simplecov (~> 0.12.0)
   sinatra (~> 1.4.0)
