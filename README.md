@@ -25,6 +25,16 @@ bundle install --path ./vendor
 bundle exec rake
 ```
 
+Console
+=======
+
+This repo has an IRB-based 'console' script for interacting with the app.
+
+```
+bundle install --path ./vendor
+bundle exec bin/console
+```
+
 License and Author
 ==================
 
