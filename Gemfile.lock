@@ -28,7 +28,7 @@ GEM
       rack
     rack-test (0.6.3)
       rack (>= 1.0)
-    rake (10.1.1)
+    rake (12.3.3)
     rb-readline (0.5.5)
     rspec (3.5.0)
       rspec-core (~> 3.5.0)
@@ -65,7 +65,7 @@ DEPENDENCIES
   capybara (~> 2.10.0)
   foreman (~> 0.78.0)
   rack-test (~> 0.6.0)
-  rake (~> 10.1.0)
+  rake (~> 12.3.3)
   rb-readline
   rspec (~> 3.5.0)
   simplecov (~> 0.15.0)
