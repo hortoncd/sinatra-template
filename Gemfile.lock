@@ -75,8 +75,5 @@ DEPENDENCIES
   simplecov (~> 0.15.0)
   sinatra (~> 2.2.0)
 
-RUBY VERSION
-   ruby 2.7.5p203
-
 BUNDLED WITH
    2.1.4
