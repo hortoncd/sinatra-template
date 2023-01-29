@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rake', '~> 12.3.3'
-gem 'sinatra', '~> 2.2.0'
+gem 'sinatra', '~> 2.2.3'
 
 # for IRB 'console'
 gem 'rb-readline'
